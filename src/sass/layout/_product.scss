@@ -1,7 +1,31 @@
-.product{
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container {
     display: flex;
-    &__mainImg{
-     width: 20rem;
-     
+    width: 110rem;
+  }
+  &__showImage {
+    margin-bottom: 2.3rem;
+    &-img {
+      width: 45rem;
+      border-radius: 1.5rem;
     }
+  }
+  &__description {
+    padding: 8rem;
+  }
+  &__imgContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__thumbnailImg {
+    width: 10rem;
+    border-radius: 1rem;
+    outline: 0.3rem solid $orageColor;
+    &-1 {
+      filter: opacity(30%);
+    }
+  }
 }

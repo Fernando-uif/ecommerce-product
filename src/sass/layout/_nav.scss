@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   height: 10.6rem;
-
+  margin-bottom: 6rem;
   &__nav {
     display: flex;
     justify-content: space-between;
-    width: 92.8rem;
-    border-bottom: 0.2rem solid hsl(223, 64%, 98%);
+    width: 118.8rem;
+    border-bottom: 0.4rem solid hsl(223, 64%, 98%);
 
     &-1 {
       display: flex;
