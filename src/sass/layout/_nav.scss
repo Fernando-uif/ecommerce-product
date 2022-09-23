@@ -1,0 +1,48 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  height: 10.6rem;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 92.8rem;
+    border-bottom: 0.2rem solid hsl(223, 64%, 98%);
+
+    &-1 {
+      display: flex;
+      align-items: center;
+    }
+
+    &-img {
+      width: 20rem;
+      margin-right: 2rem;
+    }
+
+    &-item {
+      padding: 1rem;
+      cursor: pointer;
+      margin: 1rem;
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+
+    &-2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 10rem;
+    }
+
+    &-cart,
+    &-icon,
+    &-img {
+      cursor: pointer;
+    }
+
+    &-icon {
+      width: 4.5rem;
+    }
+  }
+}
