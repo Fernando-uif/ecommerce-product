@@ -345,7 +345,8 @@ body {
       margin: 1rem;
       text-transform: capitalize;
       font-weight: 400;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      color: #9b9ca0; }
     .nav__nav-2 {
       display: flex;
       justify-content: space-between;
@@ -363,19 +364,104 @@ body {
   .product__container {
     display: flex;
     width: 110rem; }
+  .product__cardImg {
+    width: 82rem; }
   .product__showImage {
     margin-bottom: 2.3rem; }
     .product__showImage-img {
-      width: 45rem;
-      border-radius: 1.5rem; }
+      border-radius: 1.5rem;
+      width: 40rem; }
   .product__description {
     padding: 8rem; }
+    .product__description-header {
+      color: #ff7d1a;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.3rem;
+      margin-bottom: 2rem; }
+    .product__description-title {
+      color: black;
+      font-size: 4rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin-bottom: 2.5rem; }
+    .product__description-description {
+      color: #9b9ca0;
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem; }
+    .product__description-firstLetter {
+      text-transform: capitalize; }
+    .product__description-price {
+      font-size: 3rem;
+      font-weight: 700; }
+    .product__description-value {
+      margin-bottom: 1.5rem; }
+    .product__description-discount {
+      font-size: 1.5rem;
+      text-decoration: line-through;
+      color: #9b9ca0;
+      margin-bottom: 2.5rem; }
+    .product__description-percent {
+      font-size: 2rem;
+      color: #ff7d1a;
+      font-weight: 700;
+      padding: 0.1rem 1rem;
+      background-color: #ffebdc;
+      margin-left: 1.5rem;
+      border-radius: 0.5rem; }
+  .product__pay {
+    display: flex;
+    height: 5.5rem; }
+    .product__pay-add {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f7f8fd;
+      width: 29rem;
+      margin-right: 1.5rem; }
+    .product__pay-item {
+      display: inline-block;
+      font-size: 1.9rem;
+      font-weight: 800;
+      padding: 1rem; }
+      .product__pay-item:nth-child(odd) {
+        cursor: pointer;
+        color: #ff7d1a; }
+    .product__pay-button {
+      align-items: center;
+      background-color: #ff7d1a;
+      border-radius: 0.5rem;
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      font-size: 1.3rem;
+      font-weight: 600;
+      justify-content: center;
+      width: 100%;
+      position: relative; }
+      .product__pay-button::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        box-shadow: #ffb780 0px 14px 41px; }
+    .product__pay-icon {
+      margin-right: 1.5rem;
+      width: 1.8rem;
+      fill: #ffffff; }
+  .product__thumbnailContainer {
+    border-radius: 1rem; }
+    .product__thumbnailContainer:nth-child(1) {
+      outline: 0.3rem solid #ff7d1a; }
   .product__imgContainer {
     display: flex;
     justify-content: space-between; }
   .product__thumbnailImg {
-    width: 10rem;
-    border-radius: 1rem;
-    outline: 0.3rem solid #ff7d1a; }
+    width: 8rem;
+    border-radius: 1rem; }
     .product__thumbnailImg-1 {
       filter: opacity(30%); }
+    .product__thumbnailImg:hover {
+      cursor: pointer; }
