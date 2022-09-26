@@ -328,6 +328,11 @@ body {
   justify-content: center;
   height: 10.6rem;
   margin-bottom: 6rem; }
+  .nav__card {
+    position: absolute;
+    background-color: white;
+    top: 12rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
   .nav__nav {
     display: flex;
     justify-content: space-between;
@@ -348,7 +353,7 @@ body {
       font-size: 1.6rem;
       color: #9b9ca0;
       position: relative; }
-      .nav__nav-item::after {
+      .nav__nav-item:hover::after {
         content: "";
         position: absolute;
         width: 100%;

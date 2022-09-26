@@ -4,6 +4,16 @@
   height: 10.6rem;
   margin-bottom: 6rem;
 
+  &__card {
+    position: absolute;
+    background-color: $white;
+    top:12rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    // width: 20rem;
+    // height: 15rem;
+
+  }
+
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -30,7 +40,7 @@
       color: $navLightGray;
       position: relative;
 
-      &::after {
+      &:hover::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -60,7 +70,7 @@
       &:hover {
         outline: .2rem solid $orangeColor;
         border-radius: 50%;
-        
+
       }
     }
   }
