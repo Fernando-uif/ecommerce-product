@@ -116,12 +116,16 @@
       justify-content: center;
       width: 100%;
       position: relative;
+
       &::after {
         position: absolute;
         content: "";
         width: 100%;
         height: 100%;
         box-shadow: lighten(rgb(255, 125, 26), 20) 0px 14px 41px;
+      }
+      &:hover{
+        filter:opacity(60%);
       }
     }
 
@@ -134,6 +138,10 @@
 
   &__thumbnailContainer {
     border-radius: 1rem;
+
+    &:hover img {
+      filter: opacity(60%);
+    }
 
     &:nth-child(1) {
       outline: 0.3rem solid $orangeColor;
