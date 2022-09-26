@@ -365,7 +365,8 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 10rem; }
+      width: 10rem;
+      position: relative; }
     .nav__nav-cart, .nav__nav-icon, .nav__nav-img {
       cursor: pointer; }
     .nav__nav-icon {
