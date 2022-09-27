@@ -332,7 +332,29 @@ body {
     position: absolute;
     background-color: white;
     top: 12rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 10rem;
+    width: 31.9rem;
+    height: 20rem;
+    left: -12.6rem; }
+    .nav__card-title {
+      text-align: left;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      border-bottom: 0.1rem solid #ecebef;
+      padding-bottom: 2rem;
+      padding: 1.5rem 0 1.5rem 1.5rem; }
+    .nav__card-intoBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 139px;
+      height: 64%; }
+    .nav__card-text {
+      color: #68707d;
+      font-size: 1.4rem;
+      font-weight: 700; }
   .nav__nav {
     display: flex;
     justify-content: space-between;
