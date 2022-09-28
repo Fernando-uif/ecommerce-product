@@ -391,12 +391,14 @@ body {
       align-items: center;
       justify-content: center; }
     .nav__card-totalPrice {
-      font-weight: 700; }
+      font-weight: 700;
+      color: black; }
   .nav__nav {
     display: flex;
     justify-content: space-between;
     width: 118.8rem;
-    border-bottom: 0.4rem solid #f7f8fd; }
+    border-bottom: 0.4rem solid #f7f8fd;
+    position: relative; }
     .nav__nav-1 {
       display: flex;
       align-items: center; }
@@ -424,6 +426,19 @@ body {
       justify-content: space-between;
       align-items: center;
       width: 10rem;
+      position: relative; }
+    .nav__nav-number {
+      position: absolute;
+      top: 0;
+      top: -15px;
+      left: -25px;
+      background-color: orange;
+      border-radius: 10px;
+      width: 19px;
+      text-align: center;
+      color: white;
+      font-weight: 700; }
+    .nav__nav-iconContainer {
       position: relative; }
     .nav__nav-cart, .nav__nav-icon, .nav__nav-img {
       cursor: pointer; }

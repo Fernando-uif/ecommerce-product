@@ -89,8 +89,10 @@
       align-items: center;
       justify-content: center;
     }
-    &-totalPrice{
+
+    &-totalPrice {
       font-weight: 700;
+      color: $black;
     }
   }
 
@@ -99,6 +101,7 @@
     justify-content: space-between;
     width: 118.8rem;
     border-bottom: 0.4rem solid hsl(223, 64%, 98%);
+    position: relative;
 
     &-1 {
       display: flex;
@@ -135,6 +138,23 @@
       justify-content: space-between;
       align-items: center;
       width: 10rem;
+      position: relative;
+    }
+
+    &-number {
+      position: absolute;
+      top: 0;
+      top: -15px;
+      left: -25px;
+      background-color: orange;
+      border-radius: 10px;
+      width: 19px;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+    }
+
+    &-iconContainer {
       position: relative;
     }
 
