@@ -7,11 +7,10 @@
   &__card {
     position: absolute;
     background-color: $white;
-    top:12rem;
+    top: 12rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     // width: 20rem;
     // height: 15rem;
-
   }
 
   &__nav {
@@ -31,9 +30,8 @@
     }
 
     &-item {
-      // padding: 1rem;
       cursor: pointer;
-      margin: 1rem;
+      margin-left: 3rem;
       text-transform: capitalize;
       font-weight: 400;
       font-size: 1.6rem;
@@ -44,9 +42,9 @@
         content: "";
         position: absolute;
         width: 100%;
-        height: .3rem;
+        height: 0.3rem;
         background-color: $orangeColor;
-        bottom: -3.5rem;
+        bottom: -4.5rem;
         left: 0;
       }
     }
@@ -56,7 +54,7 @@
       justify-content: space-between;
       align-items: center;
       width: 10rem;
-      position:relative;
+      position: relative;
     }
 
     &-cart,
@@ -69,9 +67,8 @@
       width: 4.5rem;
 
       &:hover {
-        outline: .2rem solid $orangeColor;
+        outline: 0.2rem solid $orangeColor;
         border-radius: 50%;
-
       }
     }
   }
