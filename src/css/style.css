@@ -355,6 +355,32 @@ body {
       color: #68707d;
       font-size: 1.4rem;
       font-weight: 700; }
+    .nav__card-container {
+      padding: 1rem; }
+    .nav__card-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+      margin-bottom: 1.5rem; }
+    .nav__card-img {
+      width: 5rem;
+      border-radius: 0.5rem; }
+    .nav__card-item, .nav__card-detail {
+      font-size: 1.5rem;
+      text-transform: capitalize; }
+    .nav__card-trash {
+      cursor: pointer; }
+    .nav__card-button {
+      background-color: #ff7d1a;
+      color: white;
+      padding: 1rem 2rem;
+      width: 100%;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      font-weight: 700; }
   .nav__nav {
     display: flex;
     justify-content: space-between;
