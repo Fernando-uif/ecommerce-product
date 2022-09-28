@@ -390,6 +390,8 @@ body {
       display: flex;
       align-items: center;
       justify-content: center; }
+    .nav__card-totalPrice {
+      font-weight: 700; }
   .nav__nav {
     display: flex;
     justify-content: space-between;
