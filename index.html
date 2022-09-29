@@ -32,7 +32,7 @@
       <div class="nav__nav-2">
         <img class="nav__nav-cart" src="./src/assets/icons/icon-cart.svg" alt="cart.svg">
         <div class="nav__nav-iconContainer">
-          <div class="nav__nav-number">
+          <div id="totalItemsCart" class="nav__nav-number">
             3
           </div>
         </div>
@@ -119,11 +119,11 @@
         </div>
         <div class="product__pay">
           <div class="product__pay-add">
-            <span class="product__pay-item">-</span>
-            <span class="product__pay-item ">0</span>
-            <span class="product__pay-item">+</span>
+            <span id="lessItem" class="product__pay-item">-</span>
+            <span id="numberOfItems" class="product__pay-item ">0</span>
+            <span id="addItem" class="product__pay-item">+</span>
           </div>
-          <button class="product__pay-button">
+          <button id="addCartButton" class="product__pay-button">
             <div>
               <img class="product__pay-icon" src="./src/assets/icons/icon-cart copy.svg" alt="cart">
             </div>

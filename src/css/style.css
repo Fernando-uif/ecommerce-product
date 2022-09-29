@@ -432,7 +432,7 @@ body {
       top: 0;
       top: -15px;
       left: -25px;
-      background-color: orange;
+      background-color: #ff7d1a;
       border-radius: 10px;
       width: 19px;
       text-align: center;
@@ -515,7 +515,8 @@ body {
       display: inline-block;
       font-size: 1.9rem;
       font-weight: 800;
-      padding: 1rem; }
+      padding: 1rem;
+      user-select: none; }
       .product__pay-item:nth-child(odd) {
         cursor: pointer;
         color: #ff7d1a; }

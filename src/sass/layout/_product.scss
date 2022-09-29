@@ -96,6 +96,7 @@
       font-size: 1.9rem;
       font-weight: 800;
       padding: 1rem;
+      user-select: none;
 
       &:nth-child(odd) {
         cursor: pointer;
