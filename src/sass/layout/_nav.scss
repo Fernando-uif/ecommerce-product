@@ -41,6 +41,7 @@
 
     &-container {
       padding: 1rem;
+     
     }
 
     &-content {
@@ -86,13 +87,16 @@
 
     &-item {
       display: flex;
-      align-items: center;
+      align-items: center; 
       justify-content: center;
     }
 
     &-totalPrice {
       font-weight: 700;
       color: $black;
+    }
+    &-size{
+      height: 100%;
     }
   }
 
@@ -156,7 +160,7 @@
     }
     &-iconHidden{
       background-color: white;
-      
+
     }
     &-iconContainer {
       position: relative;

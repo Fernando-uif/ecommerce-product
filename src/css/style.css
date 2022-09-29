@@ -393,6 +393,8 @@ body {
     .nav__card-totalPrice {
       font-weight: 700;
       color: black; }
+    .nav__card-size {
+      height: 100%; }
   .nav__nav {
     display: flex;
     justify-content: space-between;
