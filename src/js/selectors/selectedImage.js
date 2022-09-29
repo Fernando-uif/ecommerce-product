@@ -21,6 +21,7 @@ const selectedImageStyle = (idImage = 1) => {
   document.querySelectorAll(".product__thumbnailImg").forEach((element) => {
     element.classList.remove("product__thumbnailImg-selected");
   });
+  
 // Adding classes of the element selected
   document
     .querySelector(`.product__thumbnailContainer-${idImage}`)

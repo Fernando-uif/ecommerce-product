@@ -564,3 +564,6 @@ body {
       filter: opacity(30%); }
     .product__thumbnailImg:hover {
       cursor: pointer; }
+
+.hidden {
+  display: none; }

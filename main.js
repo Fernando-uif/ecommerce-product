@@ -1,8 +1,9 @@
-import { addToCart, decrementItem, addItem, selectedImage } from "./src/js/selectors";
+import { addToCart, decrementItem, addItem, selectedImage, openCardCart } from "./src/js/selectors";
 
 addItem();
 decrementItem();
 
 addToCart();
+openCardCart();
 
 selectedImage();
