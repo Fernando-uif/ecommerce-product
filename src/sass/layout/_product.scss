@@ -125,8 +125,9 @@
         height: 100%;
         box-shadow: lighten(rgb(255, 125, 26), 20) 0px 14px 41px;
       }
-      &:hover{
-        filter:opacity(60%);
+
+      &:hover {
+        filter: opacity(60%);
       }
     }
 
@@ -139,14 +140,16 @@
 
   &__thumbnailContainer {
     border-radius: 1rem;
+    outline: 0.3rem solid $orangeColor;
 
-    &:hover img {
-      filter: opacity(60%);
+    &-hover {
+
+      &:hover img {
+        filter: opacity(60%);
+      }
     }
 
-    &:nth-child(1) {
-      outline: 0.3rem solid $orangeColor;
-    }
+
   }
 
   &__imgContainer {
@@ -158,7 +161,8 @@
     width: 8rem;
     border-radius: 1rem;
 
-    &-1 {
+    &-selected {
+
       filter: opacity(30%);
     }
 

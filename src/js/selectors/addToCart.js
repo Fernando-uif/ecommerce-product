@@ -4,7 +4,12 @@ export const addToCart = () => {
     const totalOfItems = parseInt(
       document.querySelector("#numberOfItems").innerText
     );
-    if (!totalOfItems) return;
+    if (!totalOfItems) {
+      totalItemsCart.classList.add = "nav__nav-iconHidden";
+      totalItemsCart.innerHTML = "";
+      return;
+    }
+    totalItemsCart.classList.remove = "nav__nav-iconHidden";
     totalItemsCart.innerHTML = totalOfItems;
   });
 };
