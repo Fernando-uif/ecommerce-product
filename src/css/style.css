@@ -465,7 +465,8 @@ body {
     margin-bottom: 2.3rem; }
     .product__showImage-img {
       border-radius: 1.5rem;
-      width: 40rem; }
+      width: 40rem;
+      cursor: pointer; }
   .product__description {
     padding: 8rem; }
     .product__description-header {
