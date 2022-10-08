@@ -1,8 +1,10 @@
 const multiplyElements = document.querySelector("#multiplyElements");
 const total = document.querySelector("#total");
+const addToCartButton = document.querySelector("#addCartButton");
+const navContainerCard = document.querySelector('#navContainerCard');
 
 export const addToCart = () => {
-  document.querySelector("#addCartButton").addEventListener("click", () => {
+  addToCartButton.addEventListener("click", () => {
     const totalItemsCart = document.querySelector("#totalItemsCart");
     const totalOfItems = parseInt(
       document.querySelector("#numberOfItems").innerText
@@ -19,3 +21,12 @@ export const addToCart = () => {
     total.innerText = `$${parseInt(totalItemsCart.innerText) * 125}.00`;
   });
 };
+export const removeCardCart = () => {
+  //TODO: Se ocultara el elemento que tengamos cuando se este mostrando la card de el carrito junto con los elementos internos.
+  
+  addToCartButton.addEventListener('click',()=>{
+    if(!navContainerCard.classList.contains('hidden')){
+      navContainerCard.classList.add('hidden');
+    }
+  })
+}
