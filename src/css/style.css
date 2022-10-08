@@ -462,6 +462,7 @@ body {
   .product__cardImg {
     width: 82rem; }
   .product__showImage {
+    cursor: pointer;
     margin-bottom: 2.3rem; }
     .product__showImage-img {
       border-radius: 1.5rem;
