@@ -1,7 +1,7 @@
 const multiplyElements = document.querySelector("#multiplyElements");
 const total = document.querySelector("#total");
 const addToCartButton = document.querySelector("#addCartButton");
-const navContainerCard = document.querySelector('#navContainerCard');
+const navContainerCard = document.querySelector("#navContainerCard");
 
 export const addToCart = () => {
   addToCartButton.addEventListener("click", () => {
@@ -22,11 +22,9 @@ export const addToCart = () => {
   });
 };
 export const removeCardCart = () => {
-  //TODO: Se ocultara el elemento que tengamos cuando se este mostrando la card de el carrito junto con los elementos internos.
-  
-  addToCartButton.addEventListener('click',()=>{
-    if(!navContainerCard.classList.contains('hidden')){
-      navContainerCard.classList.add('hidden');
+  addToCartButton.addEventListener("click", () => {
+    if (!navContainerCard.classList.contains("hidden")) {
+      navContainerCard.classList.add("hidden");
     }
-  })
-}
+  });
+};
