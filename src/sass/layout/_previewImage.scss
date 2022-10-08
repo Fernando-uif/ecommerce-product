@@ -9,20 +9,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  &__close {
+    position: absolute;
+    right: 0;
+    top: -2.6rem;
+    cursor: pointer;
+    fill: #ffffff;
+  }
+  &__next,
+  &__preview {
+    position: absolute;
+    background-color: $white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      width: 0.8rem;
+    }
+  }
+  &__preview {
+    top: 50%;
+    left: -1.5rem;
+  }
+  &__next {
+    right: -1.5rem;
+    top: 50%;
+  }
   &__container {
     display: flex;
     width: 110rem;
-  }
-
-  &__cardImg {
-    width: 82rem;
   }
 
   &__showImage {
     cursor: pointer;
     margin-bottom: 2.3rem;
     text-align: center;
+    position: relative;
     &-img {
       border-radius: 1.5rem;
       width: 40rem;
@@ -155,9 +180,9 @@
       }
     }
     @for $var from 1 to 4 {
-        &-#{$var} {
-          margin-right: 1.5rem;
-        }
+      &-#{$var} {
+        margin-right: 1.5rem;
+      }
     }
   }
 
