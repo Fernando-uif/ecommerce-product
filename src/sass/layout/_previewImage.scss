@@ -1,5 +1,4 @@
 .previewImage {
-  background-color: (255, 255, 255, 0.4);
   position: absolute;
   top: 0;
   z-index: 20;
@@ -173,16 +172,20 @@
 
   &__thumbnailContainer {
     border-radius: 1rem;
-    outline: 0.3rem solid $orangeColor;
+    background-color: $white;
+    height: 8rem;
     &-hover {
       &:hover img {
         filter: opacity(60%);
       }
     }
-    @for $var from 1 to 4 {
+    @for $var from 0 to 4 {
       &-#{$var} {
         margin-right: 1.5rem;
       }
+    }
+    &-selected {
+      outline: 0.3rem solid $orangeColor;
     }
   }
 
@@ -195,6 +198,7 @@
     width: 8rem;
     border-radius: 1rem;
 
+    // * we have the seleted img
     &-selected {
       filter: opacity(30%);
     }
