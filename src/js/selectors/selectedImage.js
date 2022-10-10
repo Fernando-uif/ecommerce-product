@@ -12,7 +12,7 @@ export const selectedImage = () => {
   });
 };
 const selectedImageStyle = (idImage = 1) => {
-//   Removing Classes
+// * Removing Classes
   document
     .querySelectorAll(".product__thumbnailContainer")
     .forEach((element) => {
@@ -22,7 +22,7 @@ const selectedImageStyle = (idImage = 1) => {
     element.classList.remove("product__thumbnailImg-selected");
   });
   
-// Adding classes of the element selected
+// * Adding classes of the element selected
   document
     .querySelector(`.product__thumbnailContainer-${idImage}`)
     .classList.add("product__thumbnailContainer");
@@ -30,3 +30,5 @@ const selectedImageStyle = (idImage = 1) => {
     .querySelector(`.product__thumbnailImg-${idImage}`)
     .classList.add("product__thumbnailImg-selected");
 };
+
+

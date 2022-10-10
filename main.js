@@ -5,15 +5,28 @@ import {
   selectedImage,
   openCardCart,
   removeCardCart,
-  openImage,
+  openPreviewImage,
+  closePreviewImage,
+  selectedImagePreview,
+  nextImage,
+  previewImage,
 } from "./src/js/selectors";
 
+// * Number of items
 addItem();
 decrementItem();
 
+// * Card of cart
 addToCart();
 openCardCart();
 removeCardCart();
 
+// * Preview Image
 selectedImage();
-openImage();
+openPreviewImage();
+closePreviewImage();
+selectedImagePreview();
+
+// * Next and Preview Image
+nextImage();
+previewImage();

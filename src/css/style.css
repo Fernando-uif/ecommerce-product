@@ -348,7 +348,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; }
+    cursor: pointer;
+    user-select: none; }
     .previewImage__next img, .previewImage__preview img {
       width: 0.8rem; }
   .previewImage__preview {
@@ -620,7 +621,8 @@ body {
     margin-bottom: 2.3rem; }
     .product__showImage-img {
       border-radius: 1.5rem;
-      width: 40rem; }
+      width: 40rem;
+      cursor: pointer; }
   .product__description {
     padding: 8rem; }
     .product__description-header {
