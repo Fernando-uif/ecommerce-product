@@ -30,3 +30,5 @@ const selectedImageStyle = (idImage = 1) => {
     .querySelector(`.product__thumbnailImg-${idImage}`)
     .classList.add("product__thumbnailImg-selected");
 };
+
+

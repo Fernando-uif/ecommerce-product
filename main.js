@@ -6,6 +6,7 @@ import {
   openCardCart,
   removeCardCart,
   openImage,
+  closeImage,
 } from "./src/js/selectors";
 
 addItem();
@@ -17,3 +18,4 @@ removeCardCart();
 
 selectedImage();
 openImage();
+closeImage();
