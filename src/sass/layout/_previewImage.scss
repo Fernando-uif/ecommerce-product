@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   &__close {
     position: absolute;
     right: 0;
@@ -15,6 +16,7 @@
     cursor: pointer;
     fill: #ffffff;
   }
+
   &__next,
   &__preview {
     position: absolute;
@@ -25,28 +27,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+
     & img {
       width: 0.8rem;
     }
   }
+
   &__preview {
     top: 50%;
     left: -1.5rem;
   }
+
   &__next {
     right: -1.5rem;
     top: 50%;
   }
+
   &__container {
     display: flex;
     width: 110rem;
 
   }
+
   &__showImage {
-    cursor: pointer;
     margin-bottom: 2.3rem;
     text-align: center;
     position: relative;
+
     &-img {
       border-radius: 1.5rem;
       width: 50rem;
@@ -174,16 +182,19 @@
     border-radius: 1rem;
     background-color: $white;
     height: 8rem;
+
     &-hover {
       &:hover img {
         filter: opacity(60%);
       }
     }
+
     @for $var from 0 to 4 {
       &-#{$var} {
         margin-right: 1.5rem;
       }
     }
+
     &-selected {
       outline: 0.3rem solid $orangeColor;
     }

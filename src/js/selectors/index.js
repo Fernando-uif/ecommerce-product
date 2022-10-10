@@ -1,8 +1,7 @@
-
 export { addItem, decrementItem } from "./numberOfItems";
 export { addToCart } from "./addToCart";
-export { closeImage } from "./openImage";
+export { closePreviewImage, openPreviewImage } from "./previewImage";
 export { openCardCart } from "./openCardCart";
-export { openImage } from "./openImage";
 export { removeCardCart } from "./addToCart";
 export { selectedImage } from "./selectedImage";
+export { selectedImagePreview } from "./selectPreviewImg";

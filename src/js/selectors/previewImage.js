@@ -3,16 +3,14 @@ const previewImage = document.querySelector("#previewImage");
 const closeIcon = document.querySelector("#closeImage");
 const selectedImage = document.querySelector("#selectedImagePreview");
 
-export const openImage = () => {
+export const openPreviewImage = () => {
   showImage.addEventListener("click", (e) => {
-    console.log(e.target.src);
     previewImage.classList.remove("hidden");
-    console.log(selectedImage.src, "Tenemos el src");
     selectedImage.setAttribute("src", e.target.src);
   });
 };
 
-export const closeImage = () => {
+export const closePreviewImage = () => {
   closeIcon.addEventListener("click", () => {
     previewImage.classList.add("hidden");
   });
