@@ -18,8 +18,8 @@ const selectedImageStyle = (idImage) => {
   document
     .querySelectorAll(".previewImage__thumbnailContainer")
     .forEach((element) => {
-      element.classList.remove("previewImage__thumbnailContainer");
       element.classList.remove("previewImage__thumbnailContainer-selected");
+      console.log(element, "Tenemos los elementos removidos");
     });
   document
     .querySelectorAll(".previewImage__thumbnailImg")
@@ -38,5 +38,3 @@ const selectedImageStyle = (idImage) => {
     .querySelector(`.previewImage__thumbnailImg-${idImage}`)
     .classList.add("previewImage__thumbnailImg-selected");
 };
-
-// previewImage__thumbnailContainer-selected

@@ -31,4 +31,3 @@ const selectedImageStyle = (idImage = 1) => {
     .classList.add("product__thumbnailImg-selected");
 };
 
-
