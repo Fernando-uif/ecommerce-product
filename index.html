@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
   <nav class="nav">
     <div class="nav__nav">
       <div class="nav__nav-1">
@@ -30,19 +31,21 @@
         <div class="nav__nav-item nav__item-5">contact</div>
       </div>
       <div class="nav__nav-2">
-        <img id="cartIcon" class="nav__nav-cart" src="./src/assets/icons/icon-cart.svg" alt="cart.svg">
+        <img id="cartIcon" class="nav__nav-cart close" src="./src/assets/icons/icon-cart.svg" alt="cart.svg">
         <div class="nav__nav-iconContainer">
           <div id="totalItemsCart" class="nav__nav-number ">
-            
+
           </div>
         </div>
         <img class="nav__nav-icon" src="./src/assets/image-avatar.png" alt="avatar.png">
-        <div id="navContainerCard"  class="nav__card hidden">
+
+        <div id="navContainerCard" class="nav__card hidden">
           <div class="nav__card-title">
             cart
           </div>
           <div id="nav__cardContainer" class="nav__card-size">
-            <div  id="cardContain" class="nav__card-container hidden">
+
+            <div id="cardContain" class="nav__card-container hidden">
               <div class="nav__card-content">
                 <div>
                   <img class="nav__card-img" src="./src/assets/product/image-product-1-thumbnail.jpg" alt="product-1">
@@ -52,7 +55,8 @@
                     fall limited edition sneakers
                   </div>
                   <div class="nav__card-detail">
-                    $125.00 x <span id="multiplyElements">3</span>  <span id="total" class="nav__card-totalPrice">$375.00</span>
+                    $125.00 x <span id="multiplyElements">3</span> <span id="total"
+                      class="nav__card-totalPrice">$375.00</span>
                   </div>
                 </div>
                 <div class="nav__card-trash">
@@ -72,28 +76,29 @@
   </nav>
   <main class="product">
     <div class="product__container">
-
       <div class="product__cardImg">
-        <div class="product__showImage">
+        <div id="showImage" class="product__showImage">
 
-          <img id="selectedImage" class="product__showImage-img" src="./src/assets/product/image-product-1.jpg" alt="sneaker">
+          <img id="selectedImage" class="product__showImage-img" src="./src/assets/product/image-product-1.jpg"
+            alt="sneaker">
         </div>
         <div class="product__imgContainer">
 
-          <div class="product__thumbnailContainer-1 product__thumbnailContainer-hover">
-            <img  class="product__thumbnailImg product__thumbnailImg-1"
+          <div class="product__thumbnailContainer-1 product__thumbnailContainer-hover product__thumbnailContainer">
+            <img
+              class="product__thumbnailImg product__thumbnailImg-1 product__thumbnailContainer product__thumbnailImg-selected"
               src="./src/assets/product/image-product-1-thumbnail.jpg" alt="">
           </div>
           <div class="product__thumbnailContainer-2 product__thumbnailContainer-hover">
-            <img  class="product__thumbnailImg product__thumbnailImg-2"
+            <img class="product__thumbnailImg product__thumbnailImg-2"
               src="./src/assets/product/image-product-2-thumbnail.jpg" alt="">
           </div>
           <div class="product__thumbnailContainer-3 product__thumbnailContainer-hover">
-            <img  class="product__thumbnailImg product__thumbnailImg-3"
+            <img class="product__thumbnailImg product__thumbnailImg-3"
               src="./src/assets/product/image-product-3-thumbnail.jpg" alt="">
           </div>
           <div class="product__thumbnailContainer-4 product__thumbnailContainer-hover">
-            <img  class="product__thumbnailImg product__thumbnailImg-4"
+            <img class="product__thumbnailImg product__thumbnailImg-4"
               src="./src/assets/product/image-product-4-thumbnail.jpg" alt="">
           </div>
         </div>
@@ -134,7 +139,55 @@
       </div>
     </div>
   </main>
+  <section>
 
+    <section class="previewImage">
+      <div class="previewImage__cardImg">
+        <div id="showImage" class="previewImage__showImage">
+          <div class="previewImage__close ">
+            <img src="./src/assets/icons/icon-close.svg" alt="close.svg">
+          </div>
+          <div class="previewImage__next">
+            <img src="./src/assets/icons/icon-next.svg" alt="next.svg">
+          </div>
+          <div class="previewImage__preview">
+            <img src="./src/assets/icons/icon-previous.svg" alt="preicon-previous.svg">
+
+          </div>
+
+          <img id="selectedImage" class="previewImage__showImage-img" src="./src/assets/product/image-product-1.jpg"
+            alt="sneaker">
+        </div>
+        <div class="previewImage__imgContainer">
+          <div class="previewImage__thumbnailContainer-1 previewImage__thumbnailContainer-hover previewImage__thumbnailContainer
+            previewImage__thumbnailContainer-selected 
+            ">
+            <img class="previewImage__thumbnailImg previewImage__thumbnailImg-1 previewImage__thumbnailContainer  
+            previewImage__thumbnailImg-selected
+              " src="./src/assets/product/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div class="previewImage__thumbnailContainer-2 previewImage__thumbnailContainer-hover
+          previewImage__thumbnailContainer
+          ">
+            <img class="previewImage__thumbnailImg previewImage__thumbnailImg-2"
+              src="./src/assets/product/image-product-2-thumbnail.jpg" alt="">
+          </div>
+          <div class="previewImage__thumbnailContainer-3 previewImage__thumbnailContainer-hover
+          previewImage__thumbnailContainer
+          ">
+            <img class="previewImage__thumbnailImg previewImage__thumbnailImg-3"
+              src="./src/assets/product/image-product-3-thumbnail.jpg" alt="">
+          </div>
+          <div class="previewImage__thumbnailContainer-4 previewImage__thumbnailContainer-hover
+          previewImage__thumbnailContainer
+          ">
+            <img class="previewImage__thumbnailImg product__thumbnailImg-4"
+              src="./src/assets/product/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
   <script type="module" src="./main.js"></script>
 </body>
 

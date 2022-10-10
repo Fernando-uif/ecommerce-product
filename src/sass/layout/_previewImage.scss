@@ -1,25 +1,55 @@
-.product {
+.previewImage {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: brightness(0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-
+  &__close {
+    position: absolute;
+    right: 0;
+    top: -2.6rem;
+    cursor: pointer;
+    fill: #ffffff;
+  }
+  &__next,
+  &__preview {
+    position: absolute;
+    background-color: $white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      width: 0.8rem;
+    }
+  }
+  &__preview {
+    top: 50%;
+    left: -1.5rem;
+  }
+  &__next {
+    right: -1.5rem;
+    top: 50%;
+  }
   &__container {
     display: flex;
     width: 110rem;
   }
 
-  &__cardImg {
-    width: 82rem;
-  }
-
   &__showImage {
-    cursor:pointer;
+    cursor: pointer;
     margin-bottom: 2.3rem;
-
+    text-align: center;
+    position: relative;
     &-img {
       border-radius: 1.5rem;
       width: 40rem;
-      cursor:pointer;
     }
   }
 
@@ -142,29 +172,34 @@
 
   &__thumbnailContainer {
     border-radius: 1rem;
-    outline: 0.3rem solid $orangeColor;
-
+    background-color: $white;
+    height: 8rem;
     &-hover {
-
       &:hover img {
         filter: opacity(60%);
       }
     }
-
-
+    @for $var from 0 to 4 {
+      &-#{$var} {
+        margin-right: 1.5rem;
+      }
+    }
+    &-selected {
+      outline: 0.3rem solid $orangeColor;
+    }
   }
 
   &__imgContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__thumbnailImg {
     width: 8rem;
     border-radius: 1rem;
 
+    // * we have the seleted img
     &-selected {
-
       filter: opacity(30%);
     }
 

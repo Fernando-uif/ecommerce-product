@@ -323,6 +323,160 @@ body {
   margin: 0;
   box-sizing: border-box; }
 
+.previewImage {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: brightness(0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .previewImage__close {
+    position: absolute;
+    right: 0;
+    top: -2.6rem;
+    cursor: pointer;
+    fill: #ffffff; }
+  .previewImage__next, .previewImage__preview {
+    position: absolute;
+    background-color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .previewImage__next img, .previewImage__preview img {
+      width: 0.8rem; }
+  .previewImage__preview {
+    top: 50%;
+    left: -1.5rem; }
+  .previewImage__next {
+    right: -1.5rem;
+    top: 50%; }
+  .previewImage__container {
+    display: flex;
+    width: 110rem; }
+  .previewImage__showImage {
+    cursor: pointer;
+    margin-bottom: 2.3rem;
+    text-align: center;
+    position: relative; }
+    .previewImage__showImage-img {
+      border-radius: 1.5rem;
+      width: 40rem; }
+  .previewImage__description {
+    padding: 8rem; }
+    .previewImage__description-header {
+      color: #ff7d1a;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.3rem;
+      margin-bottom: 2rem; }
+    .previewImage__description-title {
+      color: black;
+      font-size: 4rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin-bottom: 2.5rem; }
+    .previewImage__description-description {
+      color: #9b9ca0;
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem; }
+    .previewImage__description-firstLetter {
+      text-transform: capitalize; }
+    .previewImage__description-price {
+      font-size: 3rem;
+      font-weight: 700; }
+    .previewImage__description-value {
+      margin-bottom: 1.5rem; }
+    .previewImage__description-discount {
+      font-size: 1.5rem;
+      text-decoration: line-through;
+      color: #9b9ca0;
+      margin-bottom: 2.5rem; }
+    .previewImage__description-percent {
+      font-size: 2rem;
+      color: #ff7d1a;
+      font-weight: 700;
+      padding: 0.1rem 1rem;
+      background-color: #ffebdc;
+      margin-left: 1.5rem;
+      border-radius: 0.5rem; }
+  .previewImage__pay {
+    display: flex;
+    height: 5.5rem; }
+    .previewImage__pay-add {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f7f8fd;
+      width: 29rem;
+      margin-right: 1.5rem; }
+    .previewImage__pay-item {
+      display: inline-block;
+      font-size: 1.9rem;
+      font-weight: 800;
+      padding: 1rem;
+      user-select: none; }
+      .previewImage__pay-item:nth-child(odd) {
+        cursor: pointer;
+        color: #ff7d1a; }
+    .previewImage__pay-button {
+      align-items: center;
+      background-color: #ff7d1a;
+      border-radius: 0.5rem;
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      font-size: 1.3rem;
+      font-weight: 600;
+      justify-content: center;
+      width: 100%;
+      position: relative; }
+      .previewImage__pay-button::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        box-shadow: #ffb780 0px 14px 41px; }
+      .previewImage__pay-button:hover {
+        filter: opacity(60%); }
+    .previewImage__pay-icon {
+      margin-right: 1.5rem;
+      width: 1.8rem;
+      fill: #ffffff; }
+  .previewImage__thumbnailContainer {
+    border-radius: 1rem;
+    background-color: white;
+    height: 8rem; }
+    .previewImage__thumbnailContainer-hover:hover img {
+      filter: opacity(60%); }
+    .previewImage__thumbnailContainer-0 {
+      margin-right: 1.5rem; }
+    .previewImage__thumbnailContainer-1 {
+      margin-right: 1.5rem; }
+    .previewImage__thumbnailContainer-2 {
+      margin-right: 1.5rem; }
+    .previewImage__thumbnailContainer-3 {
+      margin-right: 1.5rem; }
+    .previewImage__thumbnailContainer-selected {
+      outline: 0.3rem solid #ff7d1a; }
+  .previewImage__imgContainer {
+    display: flex;
+    justify-content: center; }
+  .previewImage__thumbnailImg {
+    width: 8rem;
+    border-radius: 1rem; }
+    .previewImage__thumbnailImg-selected {
+      filter: opacity(30%); }
+    .previewImage__thumbnailImg:hover {
+      cursor: pointer; }
+
 .nav {
   display: flex;
   justify-content: center;
@@ -462,6 +616,7 @@ body {
   .product__cardImg {
     width: 82rem; }
   .product__showImage {
+    cursor: pointer;
     margin-bottom: 2.3rem; }
     .product__showImage-img {
       border-radius: 1.5rem;
