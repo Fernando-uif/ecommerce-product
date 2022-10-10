@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     & img {
       width: 0.8rem;
     }
@@ -43,13 +44,12 @@
   }
 
   &__showImage {
-    cursor: pointer;
     margin-bottom: 2.3rem;
     text-align: center;
     position: relative;
     &-img {
       border-radius: 1.5rem;
-      width: 40rem;
+      width: 50rem;
     }
   }
 

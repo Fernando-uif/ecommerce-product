@@ -347,7 +347,8 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    cursor: pointer; }
     .previewImage__next img, .previewImage__preview img {
       width: 0.8rem; }
   .previewImage__preview {
@@ -360,13 +361,12 @@ body {
     display: flex;
     width: 110rem; }
   .previewImage__showImage {
-    cursor: pointer;
     margin-bottom: 2.3rem;
     text-align: center;
     position: relative; }
     .previewImage__showImage-img {
       border-radius: 1.5rem;
-      width: 40rem; }
+      width: 50rem; }
   .previewImage__description {
     padding: 8rem; }
     .previewImage__description-header {
