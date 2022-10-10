@@ -1,3 +1,4 @@
+export { nextImage, previewImage } from "./nextImage";
 export { addItem, decrementItem } from "./numberOfItems";
 export { addToCart } from "./addToCart";
 export { closePreviewImage, openPreviewImage } from "./previewImage";

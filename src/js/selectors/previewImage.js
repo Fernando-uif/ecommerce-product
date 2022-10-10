@@ -7,8 +7,6 @@ export const openPreviewImage = () => {
   showImage.addEventListener("click", (e) => {
     previewImage.classList.remove("hidden");
     selectedImage.setAttribute("src", e.target.src);
-    //TODO:Aqui poner los estilos al elemento correspondiente
-    console.log(e.target.src);
     const numberElement = e.target.src.match(/-\d+/g);
     const numberOfImage = numberElement.join()[1];
 

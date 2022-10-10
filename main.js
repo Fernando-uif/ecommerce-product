@@ -8,6 +8,8 @@ import {
   openPreviewImage,
   closePreviewImage,
   selectedImagePreview,
+  nextImage,
+  previewImage,
 } from "./src/js/selectors";
 
 // * Number of items
@@ -24,3 +26,7 @@ selectedImage();
 openPreviewImage();
 closePreviewImage();
 selectedImagePreview();
+
+// * Next and Preview Image
+nextImage();
+previewImage();
