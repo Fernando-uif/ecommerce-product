@@ -348,7 +348,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; }
+    cursor: pointer;
+    user-select: none; }
     .previewImage__next img, .previewImage__preview img {
       width: 0.8rem; }
   .previewImage__preview {

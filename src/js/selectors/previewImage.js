@@ -2,7 +2,7 @@ const showImage = document.querySelector("#showImage");
 const previewImage = document.querySelector("#previewImage");
 const closeIcon = document.querySelector("#closeImage");
 const selectedImage = document.querySelector("#selectedImagePreview");
-
+//TODO:Funcion para Colocar y eliminar estilos
 export const openPreviewImage = () => {
   showImage.addEventListener("click", (e) => {
     previewImage.classList.remove("hidden");

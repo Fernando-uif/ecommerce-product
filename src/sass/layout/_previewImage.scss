@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    user-select: none;
 
     & img {
       width: 0.8rem;
@@ -36,7 +37,7 @@
 
   &__preview {
     top: 50%;
-    left: -1.5rem;
+    left: -1.5rem; 
   }
 
   &__next {
