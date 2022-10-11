@@ -1,15 +1,16 @@
 import {
-  addToCart,
-  decrementItem,
   addItem,
-  selectedImage,
-  openCardCart,
-  removeCardCart,
-  openPreviewImage,
+  addToCart,
   closePreviewImage,
-  selectedImagePreview,
+  decrementItem,
+  deleteItem,
   nextImage,
+  openCardCart,
+  openPreviewImage,
   previewImage,
+  removeCardCart,
+  selectedImage,
+  selectedImagePreview,
 } from "./src/js/selectors";
 
 // * Number of items
@@ -18,13 +19,14 @@ decrementItem();
 
 // * Card of cart
 addToCart();
+deleteItem();
 openCardCart();
 removeCardCart();
 
 // * Preview Image
-selectedImage();
-openPreviewImage();
 closePreviewImage();
+openPreviewImage();
+selectedImage();
 selectedImagePreview();
 
 // * Next and Preview Image
