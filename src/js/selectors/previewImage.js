@@ -15,7 +15,6 @@ export const openPreviewImage = () => {
       .querySelectorAll(".previewImage__thumbnailContainer")
       .forEach((element) => {
         element.classList.remove("previewImage__thumbnailContainer-selected");
-        console.log(element);
       });
     document
       .querySelectorAll(".previewImage__thumbnailImg")
