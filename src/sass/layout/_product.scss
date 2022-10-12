@@ -6,6 +6,7 @@
   &__container {
     display: flex;
     width: 100rem;
+
     @media screen and (max-width: $tablet-lg) {
       flex-direction: column;
     }
@@ -13,6 +14,7 @@
 
   &__cardImg {
     padding-left: 8rem;
+
     // width: 82rem;
     @media screen and (max-width: $laptop-lg) {
       padding-left: unset;
@@ -22,25 +24,37 @@
   &__showImage {
     cursor: pointer;
     margin-bottom: 2.3rem;
+
     @media screen and (max-width: $tablet-lg) {
       text-align: center;
     }
+
     &-img {
       border-radius: 1.5rem;
       width: 40rem;
       cursor: pointer;
+
+      @media screen and (max-width:$tablet-llg) {
+        width: 36rem;
+      }
+
       @media screen and (max-width: $tablet-lg) {
         width: 100vw;
         border-radius: unset;
+
       }
     }
   }
 
   &__description {
     padding: 8rem;
+
     @media screen and (max-width: $laptop-lg) {
       padding: 2rem;
+      padding: 2rem 1rem 2rem 2rem;
+      padding: 2rem 1rem;
     }
+
     &-header {
       color: $orangeColor;
       font-size: 1.5rem;
@@ -169,6 +183,7 @@
   &__imgContainer {
     display: flex;
     justify-content: space-between;
+
     @media screen and (max-width: $tablet-lg) {
       display: none;
     }
@@ -177,9 +192,11 @@
   &__thumbnailImg {
     width: 8rem;
     border-radius: 1rem;
+
     @media screen and (max-width: $tablet-llg) {
       width: 7rem;
     }
+
     &-selected {
       filter: opacity(30%);
     }

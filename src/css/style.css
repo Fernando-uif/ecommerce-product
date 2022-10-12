@@ -656,6 +656,9 @@ body {
       border-radius: 1.5rem;
       width: 40rem;
       cursor: pointer; }
+      @media screen and (max-width: 864px) {
+        .product__showImage-img {
+          width: 36rem; } }
       @media screen and (max-width: 769px) {
         .product__showImage-img {
           width: 100vw;
@@ -664,7 +667,9 @@ body {
     padding: 8rem; }
     @media screen and (max-width: 1024px) {
       .product__description {
-        padding: 2rem; } }
+        padding: 2rem;
+        padding: 2rem 1rem 2rem 2rem;
+        padding: 2rem 1rem; } }
     .product__description-header {
       color: #ff7d1a;
       font-size: 1.5rem;
