@@ -29,8 +29,9 @@
       border-radius: 1.5rem;
       width: 40rem;
       cursor: pointer;
-      @media screen and (max-width: $tablet-llg) {
-        width: 34rem;
+      @media screen and (max-width: $tablet-lg) {
+        width: 100vw;
+        border-radius: unset;
       }
     }
   }

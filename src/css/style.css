@@ -483,6 +483,9 @@ body {
   justify-content: center;
   height: 10.6rem;
   margin-bottom: 6rem; }
+  @media screen and (max-width: 769px) {
+    .nav {
+      margin-bottom: unset; } }
   .nav__menu {
     width: 10rem;
     display: flex;
@@ -653,9 +656,10 @@ body {
       border-radius: 1.5rem;
       width: 40rem;
       cursor: pointer; }
-      @media screen and (max-width: 864px) {
+      @media screen and (max-width: 769px) {
         .product__showImage-img {
-          width: 34rem; } }
+          width: 100vw;
+          border-radius: unset; } }
   .product__description {
     padding: 8rem; }
     @media screen and (max-width: 1024px) {
