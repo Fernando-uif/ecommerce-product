@@ -5,27 +5,41 @@
 
   &__container {
     display: flex;
-    width: 110rem;
+    width: 100rem;
+    @media screen and (max-width: $tablet-lg) {
+      flex-direction: column;
+    }
   }
 
   &__cardImg {
-    width: 82rem;
+    padding-left: 8rem;
+    // width: 82rem;
+    @media screen and (max-width: $laptop-lg) {
+      padding-left: unset;
+    }
   }
 
   &__showImage {
-    cursor:pointer;
+    cursor: pointer;
     margin-bottom: 2.3rem;
-
+    @media screen and (max-width: $tablet-lg) {
+      text-align: center;
+    }
     &-img {
       border-radius: 1.5rem;
       width: 40rem;
-      cursor:pointer;
+      cursor: pointer;
+      @media screen and (max-width: $tablet-llg) {
+        width: 34rem;
+      }
     }
   }
 
   &__description {
     padding: 8rem;
-
+    @media screen and (max-width: $laptop-lg) {
+      padding: 2rem;
+    }
     &-header {
       color: $orangeColor;
       font-size: 1.5rem;
@@ -145,26 +159,27 @@
     outline: 0.3rem solid $orangeColor;
 
     &-hover {
-
       &:hover img {
         filter: opacity(60%);
       }
     }
-
-
   }
 
   &__imgContainer {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: $tablet-lg) {
+      display: none;
+    }
   }
 
   &__thumbnailImg {
     width: 8rem;
     border-radius: 1rem;
-
+    @media screen and (max-width: $tablet-llg) {
+      width: 7rem;
+    }
     &-selected {
-
       filter: opacity(30%);
     }
 

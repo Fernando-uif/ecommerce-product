@@ -3,7 +3,19 @@
   justify-content: center;
   height: 10.6rem;
   margin-bottom: 6rem;
-
+  &__menu {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-img {
+      display: none;
+      @media screen and (max-width: $tablet-lg) {
+        display: block;
+        width: 2rem;
+      }
+    }
+  }
   &__card {
     position: absolute;
     background-color: $white;
@@ -13,7 +25,7 @@
     width: 35rem;
     height: 22rem;
     left: -12.6rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 
     &-title {
       text-align: left;
@@ -41,7 +53,6 @@
 
     &-container {
       padding: 1rem;
-     
     }
 
     &-content {
@@ -58,7 +69,7 @@
     }
 
     &-item,
-    &-detail { 
+    &-detail {
       font-size: 1.5rem;
       text-transform: capitalize;
       color: $navLightGray;
@@ -87,7 +98,7 @@
 
     &-item {
       display: flex;
-      align-items: center; 
+      align-items: center;
       justify-content: center;
     }
 
@@ -95,7 +106,7 @@
       font-weight: 700;
       color: $black;
     }
-    &-size{
+    &-size {
       height: 100%;
     }
   }
@@ -106,7 +117,7 @@
     width: 118.8rem;
     border-bottom: 0.4rem solid hsl(223, 64%, 98%);
     position: relative;
-
+    padding: 1rem;
     &-1 {
       display: flex;
       align-items: center;
@@ -115,6 +126,9 @@
     &-img {
       width: 20rem;
       margin-right: 2rem;
+      @media screen and (max-width: $tablet-lg) {
+        width: 15rem;
+      }
     }
 
     &-item {
@@ -125,7 +139,13 @@
       font-size: 1.6rem;
       color: $navLightGray;
       position: relative;
+      @media screen and (max-width: $tablet-llg) {
+        margin-left: 1rem;
+      }
 
+      @media screen and (max-width: $tablet-lg) {
+        display: none;
+      }
       &:hover::after {
         content: "";
         position: absolute;
@@ -156,11 +176,9 @@
       text-align: center;
       color: $white;
       font-weight: 700;
-      
     }
-    &-iconHidden{
+    &-iconHidden {
       background-color: white;
-
     }
     &-iconContainer {
       position: relative;
@@ -181,4 +199,4 @@
       }
     }
   }
-} 
+}

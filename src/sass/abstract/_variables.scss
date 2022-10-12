@@ -9,11 +9,17 @@ $lineGray: rgb(236, 235, 239);
 $lightGrayishBlue: hsl(223, 64%, 98%);
 $navLightGray: rgb(155, 156, 160);
 $white: hsl(0, 0%, 100%);
-$black : hsl(0, 0%, 0%);
+$black: hsl(0, 0%, 0%);
 // $black (with 75% opacity for lightbox background): hsl(0, 0%, 0%);
 
 // Font-size
 $fontSize-1: 1.6rem;
 
 // Font-family
-$font-family: 'Kumbh Sans', sans-serif;
+$font-family: "Kumbh Sans", sans-serif;
+
+// Breakpoints
+$tablet-llg: 864px;
+$tablet-lg: 769px;
+
+$laptop-lg: 1024px;
