@@ -3,7 +3,7 @@
   justify-content: center;
   height: 10.6rem;
   margin-bottom: 6rem;
-  @media screen and (max-width:$tablet-lg) {
+  @media screen and (max-width: $tablet-lg) {
     margin-bottom: unset;
   }
   &__menu {
@@ -27,8 +27,12 @@
     top: 10rem;
     width: 35rem;
     height: 22rem;
-    left: -12.6rem;
+    left: -30rem;
     border-radius: 0.5rem;
+    z-index: 20;
+    @media screen and (max-width: $cellphone-l) {
+      left: -25rem;
+    }
 
     &-title {
       text-align: left;
@@ -121,11 +125,11 @@
     border-bottom: 0.4rem solid hsl(223, 64%, 98%);
     position: relative;
     padding: 1rem;
-   
+
     &-1 {
       display: flex;
       align-items: center;
-    }  
+    }
 
     &-img {
       width: 20rem;

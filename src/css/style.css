@@ -505,8 +505,12 @@ body {
     top: 10rem;
     width: 35rem;
     height: 22rem;
-    left: -12.6rem;
-    border-radius: 0.5rem; }
+    left: -30rem;
+    border-radius: 0.5rem;
+    z-index: 20; }
+    @media screen and (max-width: 537px) {
+      .nav__card {
+        left: -25rem; } }
     .nav__card-title {
       text-align: left;
       font-size: 1.5rem;
