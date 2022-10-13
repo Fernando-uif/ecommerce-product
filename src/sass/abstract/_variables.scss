@@ -19,7 +19,15 @@ $fontSize-1: 1.6rem;
 $font-family: "Kumbh Sans", sans-serif;
 
 // Breakpoints
+
+// laptom
+$laptop-lg: 1024px;
+
+// Tablet
 $tablet-llg: 864px;
 $tablet-lg: 769px;
 
-$laptop-lg: 1024px;
+// Cellphone
+$cellphone-l:537px;
+$cellphone-m: 425px;
+$cellphone-s:375px;

@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   &__container {
     display: flex;
     width: 100rem;
@@ -11,12 +10,49 @@
       flex-direction: column;
     }
   }
+  &__next,
+  &__preview {
+    position: absolute;
+    background-color: $white;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+    @media screen and (max-width: $tablet-lg) {
+      display: flex;
+    }
+    @media screen and (max-width: $cellphone-l) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    & img {
+      width: 1rem;
+      @media screen and (max-width: $cellphone-l) {
+        width: 0.8rem;
+      }
+    }
+  }
+  &__preview {
+    top: 50%;
+    left: 2.5rem;
+  }
 
+  &__next {
+    right: 2.5rem;
+    top: 50%;
+  }
   &__cardImg {
     padding-left: 8rem;
 
     // width: 82rem;
     @media screen and (max-width: $laptop-lg) {
+      padding-left: 1rem;
+    }
+    @media screen and (max-width: $tablet-lg) {
       padding-left: unset;
     }
   }
@@ -24,6 +60,7 @@
   &__showImage {
     cursor: pointer;
     margin-bottom: 2.3rem;
+    position: relative;
 
     @media screen and (max-width: $tablet-lg) {
       text-align: center;
@@ -34,14 +71,13 @@
       width: 40rem;
       cursor: pointer;
 
-      @media screen and (max-width:$tablet-llg) {
+      @media screen and (max-width: $tablet-llg) {
         width: 36rem;
       }
 
       @media screen and (max-width: $tablet-lg) {
         width: 100vw;
         border-radius: unset;
-
       }
     }
   }
@@ -50,11 +86,23 @@
     padding: 8rem;
 
     @media screen and (max-width: $laptop-lg) {
-      padding: 2rem;
-      padding: 2rem 1rem 2rem 2rem;
       padding: 2rem 1rem;
     }
-
+    @media screen and (max-width: $tablet-lg) {
+      padding: 2rem 6rem;
+    }
+    @media screen and (max-width: $cellphone-l) {
+      padding: 2rem 2rem;
+    }
+    &-value {
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: $cellphone-l) {
+        flex-direction: unset;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
     &-header {
       color: $orangeColor;
       font-size: 1.5rem;
@@ -70,6 +118,9 @@
       text-transform: capitalize;
       font-weight: 600;
       margin-bottom: 2.5rem;
+       @media screen and (max-width:$cellphone-l) {
+          font-size:2rem;
+      }
     }
 
     &-description {
@@ -95,7 +146,10 @@
       font-size: 1.5rem;
       text-decoration: line-through;
       color: $navLightGray;
-      margin-bottom: 2.5rem;
+      margin-top: 1.5rem;
+      @media screen and (max-width: $cellphone-l) {
+        margin-top: 0;
+      }
     }
 
     &-percent {
@@ -112,7 +166,10 @@
   &__pay {
     display: flex;
     height: 5.5rem;
-
+    @media screen and (max-width: $cellphone-l) {
+      flex-direction: column;
+      height: unset;
+    }
     &-add {
       display: flex;
       justify-content: space-around;
@@ -120,6 +177,11 @@
       background-color: $lightGrayishBlue;
       width: 29rem;
       margin-right: 1.5rem;
+      @media screen and (max-width: $cellphone-l) {
+        width: unset;
+        margin-right: unset;
+        margin-bottom: 2rem;
+      }
     }
 
     &-item {
@@ -148,7 +210,9 @@
       justify-content: center;
       width: 100%;
       position: relative;
-
+      @media screen and (max-width: $cellphone-l) {
+        height: 5rem;
+      }
       &::after {
         position: absolute;
         content: "";

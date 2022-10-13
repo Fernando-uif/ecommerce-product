@@ -1,7 +1,7 @@
 import { numberOfImage } from "../helpers/numberOfImage";
 
 const nextButton = document.querySelector("#nextButton");
-const previewButton = document.querySelector("#previewButton");
+const previousButton = document.querySelector("#previousButton");
 const showImage = document.querySelector("#selectedImagePreview");
 
 export const nextImage = () => {
@@ -37,7 +37,7 @@ export const nextImage = () => {
   });
 };
 export const previewImage = () => {
-  previewButton.addEventListener("click", () => {
+  previousButton.addEventListener("click", () => {
     const number = numberOfImage("#selectedImagePreview");
     if (parseInt(number) === 1) return;
     document
