@@ -2,12 +2,12 @@ import { numberOfImage } from "../helpers/numberOfImage";
 
 const previousButtonRes = document.querySelector("#previousButtonRes");
 const nextButtonRes = document.querySelector("#nextButtonRes");
-const showImage = document.querySelector("#selectedImageResponsive");
+const showImage = document.querySelector("#selectedImage");
 
 export const nextImageResponsive = () => {
   nextButtonRes.addEventListener("click", () => {
-    // const selectedImageResponsive = document.querySelector("#selectedImageResponsive");
-    const number = numberOfImage("#selectedImageResponsive");
+    // const selectedImage = document.querySelector("#selectedImage");
+    const number = numberOfImage("#selectedImage");
     console.log(number);
     if (parseInt(number) + 1 >= 5) return;
     showImage.setAttribute(
@@ -19,9 +19,9 @@ export const nextImageResponsive = () => {
 
 export const previousImageResponsive = () => {
   previousButtonRes.addEventListener("click", () => {
-    // const selectedImageResponsive = document.querySelector("#selectedImageResponsive");
-    console.log(selectedImageResponsive.src);
-    const number = numberOfImage("#selectedImageResponsive");
+    // const selectedImage = document.querySelector("#selectedImage");
+    console.log(selectedImage.src);
+    const number = numberOfImage("#selectedImage");
     if (parseInt(number) === 1) return;
     showImage.setAttribute(
       "src",
