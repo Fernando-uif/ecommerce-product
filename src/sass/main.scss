@@ -3,11 +3,10 @@
 
 @import "./abstract/mixins";
 
-
-@import "./layout/previewImage";
+@import './layout/navResponsive';
 @import "./layout/nav";
+@import "./layout/previewImage";
 @import "./layout/product";
-
 
 @import './component/hidden'; 
 
