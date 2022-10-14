@@ -15,6 +15,15 @@
     top: -2.6rem;
     cursor: pointer;
     fill: #ffffff;
+    @media screen and (max-width: $cellphone-l) {
+      right: 1.3rem;
+      top: -4rem;
+    }
+    & img {
+      @media screen and (max-width: $cellphone-l) {
+        width: 1.9rem;
+      }
+    }
   }
 
   &__next,
@@ -38,11 +47,17 @@
   &__preview {
     top: 50%;
     left: -1.5rem;
+    @media screen and (max-width: $cellphone-l) {
+      left: 1.5rem;
+    }
   }
 
   &__next {
     right: -1.5rem;
     top: 50%;
+    @media screen and (max-width: $cellphone-l) {
+      right: 1.5rem;
+    }
   }
 
   &__container {
@@ -58,6 +73,9 @@
     &-img {
       border-radius: 1.5rem;
       width: 50rem;
+      @media screen and (max-width: $cellphone-l) {
+        width: 100vw;
+      }
     }
   }
 

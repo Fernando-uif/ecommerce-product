@@ -11,7 +11,7 @@
     }
   }
   &__next,
-  &__preview {
+  &__previous {
     position: absolute;
     background-color: $white;
     width: 5.5rem;
@@ -22,6 +22,7 @@
     cursor: pointer;
     user-select: none;
     display: none;
+    z-index: 20;
     @media screen and (max-width: $tablet-lg) {
       display: flex;
     }
@@ -36,7 +37,7 @@
       }
     }
   }
-  &__preview {
+  &__previous {
     top: 50%;
     left: 2.5rem;
   }
@@ -47,7 +48,7 @@
   }
   &__cardImg {
     padding-left: 8rem;
-
+    position: relative;
     // width: 82rem;
     @media screen and (max-width: $laptop-lg) {
       padding-left: 1rem;
@@ -61,11 +62,9 @@
     cursor: pointer;
     margin-bottom: 2.3rem;
     position: relative;
-
     @media screen and (max-width: $tablet-lg) {
       text-align: center;
     }
-
     &-img {
       border-radius: 1.5rem;
       width: 40rem;
@@ -118,8 +117,8 @@
       text-transform: capitalize;
       font-weight: 600;
       margin-bottom: 2.5rem;
-       @media screen and (max-width:$cellphone-l) {
-          font-size:2rem;
+      @media screen and (max-width: $cellphone-l) {
+        font-size: 2rem;
       }
     }
 

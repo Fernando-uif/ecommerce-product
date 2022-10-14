@@ -11,13 +11,11 @@ export const nextImage = () => {
     document
       .querySelectorAll(".previewImage__thumbnailContainer")
       .forEach((element) => {
-        console.log(element, "Tenemos el element");
         element.classList.remove("previewImage__thumbnailContainer-selected");
       });
     document
       .querySelectorAll(".previewImage__thumbnailImg")
       .forEach((element) => {
-        console.log(element);
         element.classList.remove("previewImage__thumbnailImg-selected");
       });
     const nextContainer = document.querySelector(
@@ -43,13 +41,11 @@ export const previewImage = () => {
     document
       .querySelectorAll(".previewImage__thumbnailContainer")
       .forEach((element) => {
-        console.log(element, "Tenemos el element");
         element.classList.remove("previewImage__thumbnailContainer-selected");
       });
     document
       .querySelectorAll(".previewImage__thumbnailImg")
       .forEach((element) => {
-        console.log(element);
         element.classList.remove("previewImage__thumbnailImg-selected");
       });
     const nextContainer = document.querySelector(

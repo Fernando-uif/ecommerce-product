@@ -5,9 +5,11 @@ import {
   decrementItem,
   deleteItem,
   nextImage,
+  nextImageResponsive,
   openCardCart,
   openPreviewImage,
   previewImage,
+  previousImageResponsive,
   removeCardCart,
   selectedImage,
   selectedImagePreview,
@@ -26,8 +28,12 @@ removeCardCart();
 // * Preview Image
 closePreviewImage();
 openPreviewImage();
+
 selectedImage();
 selectedImagePreview();
+
+nextImageResponsive();
+previousImageResponsive();
 
 // * Next and Preview Image
 nextImage();

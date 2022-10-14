@@ -339,6 +339,13 @@ body {
     top: -2.6rem;
     cursor: pointer;
     fill: #ffffff; }
+    @media screen and (max-width: 537px) {
+      .previewImage__close {
+        right: 1.3rem;
+        top: -4rem; } }
+    @media screen and (max-width: 537px) {
+      .previewImage__close img {
+        width: 1.9rem; } }
   .previewImage__next, .previewImage__preview {
     position: absolute;
     background-color: white;
@@ -355,9 +362,15 @@ body {
   .previewImage__preview {
     top: 50%;
     left: -1.5rem; }
+    @media screen and (max-width: 537px) {
+      .previewImage__preview {
+        left: 1.5rem; } }
   .previewImage__next {
     right: -1.5rem;
     top: 50%; }
+    @media screen and (max-width: 537px) {
+      .previewImage__next {
+        right: 1.5rem; } }
   .previewImage__container {
     display: flex;
     width: 110rem; }
@@ -368,6 +381,9 @@ body {
     .previewImage__showImage-img {
       border-radius: 1.5rem;
       width: 50rem; }
+      @media screen and (max-width: 537px) {
+        .previewImage__showImage-img {
+          width: 100vw; } }
   .previewImage__description {
     padding: 8rem; }
     .previewImage__description-header {
@@ -645,7 +661,7 @@ body {
     @media screen and (max-width: 769px) {
       .product__container {
         flex-direction: column; } }
-  .product__next, .product__preview {
+  .product__next, .product__previous {
     position: absolute;
     background-color: white;
     width: 5.5rem;
@@ -655,27 +671,29 @@ body {
     justify-content: center;
     cursor: pointer;
     user-select: none;
-    display: none; }
+    display: none;
+    z-index: 20; }
     @media screen and (max-width: 769px) {
-      .product__next, .product__preview {
+      .product__next, .product__previous {
         display: flex; } }
     @media screen and (max-width: 537px) {
-      .product__next, .product__preview {
+      .product__next, .product__previous {
         width: 3.5rem;
         height: 3.5rem; } }
-    .product__next img, .product__preview img {
+    .product__next img, .product__previous img {
       width: 1rem; }
       @media screen and (max-width: 537px) {
-        .product__next img, .product__preview img {
+        .product__next img, .product__previous img {
           width: 0.8rem; } }
-  .product__preview {
+  .product__previous {
     top: 50%;
     left: 2.5rem; }
   .product__next {
     right: 2.5rem;
     top: 50%; }
   .product__cardImg {
-    padding-left: 8rem; }
+    padding-left: 8rem;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .product__cardImg {
         padding-left: 1rem; } }
