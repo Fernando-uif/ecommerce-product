@@ -8,21 +8,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   &__container {
     position: relative;
   }
+
   &__close {
     position: absolute;
-    width: 2rem;
+    width: 3rem;
     right: 0;
-    top: -1.5rem;
+    top: -4rem;
   }
+
   &__item {
     color: #fff;
     font-size: 6rem;
     text-transform: capitalize;
     margin-bottom: 1.5rem;
     position: relative;
+
     &::after {
       transition: all 0.5s ease;
       content: "";
@@ -33,6 +37,7 @@
       left: 0;
       bottom: -0.8rem;
     }
+
     &:hover::after {
       width: 100%;
     }

@@ -337,9 +337,9 @@ body {
     position: relative; }
   .navResponsive__close {
     position: absolute;
-    width: 2rem;
+    width: 3rem;
     right: 0;
-    top: -1.5rem; }
+    top: -4rem; }
   .navResponsive__item {
     color: #fff;
     font-size: 6rem;

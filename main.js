@@ -1,12 +1,14 @@
 import {
   addItem,
   addToCart,
+  closeNavResponsive,
   closePreviewImage,
   decrementItem,
   deleteItem,
   nextImage,
   nextImageResponsive,
   openCardCart,
+  openNavResponsive,
   openPreviewImage,
   previewImage,
   previousImageResponsive,
@@ -14,6 +16,10 @@ import {
   selectedImage,
   selectedImagePreview,
 } from "./src/js/selectors";
+
+// * Open Nav Responsive
+openNavResponsive();
+closeNavResponsive();
 
 // * Number of items
 addItem();
@@ -38,3 +44,4 @@ previousImageResponsive();
 // * Next and Preview Image
 nextImage();
 previewImage();
+
