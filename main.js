@@ -44,4 +44,3 @@ previousImageResponsive();
 // * Next and Preview Image
 nextImage();
 previewImage();
-

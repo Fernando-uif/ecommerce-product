@@ -8,7 +8,6 @@ export const nextImageResponsive = () => {
   nextButtonRes.addEventListener("click", () => {
     // const selectedImage = document.querySelector("#selectedImage");
     const number = numberOfImage("#selectedImage");
-    console.log(number);
     if (parseInt(number) + 1 >= 5) return;
     showImage.setAttribute(
       "src",
@@ -19,8 +18,6 @@ export const nextImageResponsive = () => {
 
 export const previousImageResponsive = () => {
   previousButtonRes.addEventListener("click", () => {
-    // const selectedImage = document.querySelector("#selectedImage");
-    console.log(selectedImage.src);
     const number = numberOfImage("#selectedImage");
     if (parseInt(number) === 1) return;
     showImage.setAttribute(
