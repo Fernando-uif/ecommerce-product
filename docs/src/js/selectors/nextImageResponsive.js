@@ -1,4 +1,4 @@
-import { numberOfImage } from "../helpers/numberOfImage";
+import { numberOfImage } from "../helpers/numberOfImage.js";
 
 const previousButtonRes = document.querySelector("#previousButtonRes");
 const nextButtonRes = document.querySelector("#nextButtonRes");
