@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "watch:sass": "node-sass ./src/sass/main.scss ./src/css/style.css -w"
+    "watch:sass": "node-sass ./src/sass/main.scss ./src/css/style.css -w",
+    "minify:js": "browserify ./main.js > ./bundle.js --plugin tinyify"
   },
   "devDependencies": {
     "node-sass": "^7.0.3",
