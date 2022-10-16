@@ -15,7 +15,7 @@ import {
   removeCardCart,
   selectedImage,
   selectedImagePreview,
-} from "./js/selectors";
+} from "./js/selectors/index.js";
 
 // * Open Nav Responsive
 openNavResponsive();
