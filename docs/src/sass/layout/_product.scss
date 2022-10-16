@@ -1,0 +1,295 @@
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    width: 100rem;
+
+    @media screen and (max-width: $tablet-lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__next,
+  &__previous {
+    position: absolute;
+    background-color: $white;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+    z-index: 20;
+
+    @media screen and (max-width: $tablet-lg) {
+      display: flex;
+    }
+
+    @media screen and (max-width: $cellphone-l) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    & img {
+      width: 1rem;
+
+      @media screen and (max-width: $cellphone-l) {
+        width: 0.8rem;
+      }
+    }
+  }
+
+  &__previous {
+    top: 50%;
+    left: 2.5rem;
+  }
+
+  &__next {
+    right: 2.5rem;
+    top: 50%;
+  }
+
+  &__cardImg {
+    padding-left: 8rem;
+    position: relative;
+
+    // width: 82rem;
+    @media screen and (max-width: $laptop-lg) {
+      padding-left: 1rem;
+    }
+
+    @media screen and (max-width: $tablet-lg) {
+      padding-left: unset;
+    }
+  }
+
+  &__showImage {
+    cursor: pointer;
+    margin-bottom: 2.3rem;
+    position: relative;
+
+    @media screen and (max-width: $tablet-lg) {
+      text-align: center;
+    }
+
+    &-img {
+      border-radius: 1.5rem;
+      width: 40rem;
+      cursor: pointer;
+
+      @media screen and (max-width: $tablet-llg) {
+        width: 36rem;
+      }
+
+      @media screen and (max-width: $tablet-lg) {
+        width: 100vw;
+        border-radius: unset;
+      }
+    }
+  }
+
+  &__description {
+    padding: 8rem;
+
+    @media screen and (max-width: $laptop-lg) {
+      padding: 2rem 1rem;
+    }
+
+    @media screen and (max-width: $tablet-lg) {
+      padding: 2rem 6rem;
+    }
+
+    @media screen and (max-width: $cellphone-l) {
+      padding: 2rem 2rem;
+    }
+
+    &-value {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: $cellphone-l) {
+        flex-direction: unset;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    &-header {
+      color: $orangeColor;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.3rem;
+      margin-bottom: 2rem;
+    }
+
+    &-title {
+      color: $black;
+      font-size: 4rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+
+      @media screen and (max-width: $cellphone-l) {
+        font-size: 2rem;
+      }
+    }
+
+    &-description {
+      color: $navLightGray;
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem;
+    }
+
+    &-firstLetter {
+      text-transform: capitalize;
+    }
+
+    &-price {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    &-value {
+      margin-bottom: 1.5rem;
+    }
+
+    &-discount {
+      font-size: 1.5rem;
+      text-decoration: line-through;
+      color: $navLightGray;
+      margin-top: 1.5rem;
+
+      @media screen and (max-width: $cellphone-l) {
+        margin-top: 0;
+      }
+    }
+
+    &-percent {
+      font-size: 2rem;
+      color: $orangeColor;
+      font-weight: 700;
+      padding: 0.1rem 1rem;
+      background-color: lighten($orangeColor, 38);
+      margin-left: 1.5rem;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__pay {
+    display: flex;
+    height: 5.5rem;
+
+    @media screen and (max-width: $cellphone-l) {
+      flex-direction: column;
+      height: unset;
+    }
+
+    &-add {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: $lightGrayishBlue;
+      width: 29rem;
+      margin-right: 1.5rem;
+
+      @media screen and (max-width: $cellphone-l) {
+        width: unset;
+        margin-right: unset;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-item {
+      display: inline-block;
+      font-size: 1.9rem;
+      font-weight: 800;
+      padding: 1rem;
+      user-select: none;
+
+      &:nth-child(odd) {
+        cursor: pointer;
+        color: $orangeColor;
+      }
+    }
+
+    &-button {
+      align-items: center;
+      background-color: $orangeColor;
+      border-radius: 0.5rem;
+      border: none;
+      color: $white;
+      cursor: pointer;
+      display: flex;
+      font-size: 1.3rem;
+      font-weight: 600;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+
+      @media screen and (max-width: $cellphone-l) {
+        height: 5rem;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        box-shadow: lighten(rgb(255, 125, 26), 20) 0px 14px 41px;
+      }
+
+      &:hover {
+        filter: opacity(60%);
+      }
+    }
+
+    &-icon {
+      margin-right: 1.5rem;
+      width: 1.8rem;
+      fill: #ffffff;
+    }
+  }
+
+  &__thumbnailContainer {
+    border-radius: 1rem;
+    outline: 0.3rem solid $orangeColor;
+
+    &-hover {
+      &:hover img {
+        filter: opacity(60%);
+      }
+    }
+  }
+
+  &__imgContainer {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $tablet-lg) {
+      display: none;
+    }
+  }
+
+  &__thumbnailImg {
+    width: 8rem;
+    border-radius: 1rem;
+
+    @media screen and (max-width: $tablet-llg) {
+      width: 7rem;
+    }
+
+    &-selected {
+      filter: opacity(30%);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

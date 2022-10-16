@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="icon" href="./src/assets/icons/favicon-32x32.png" type="image/x-icon">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav__menu">
+
+      <img id="navResponsive"  class="nav__menu-img" src="./src/assets/icons/icon-menu.svg" alt="icon-menu.svg">
+    </div>
+    <div class="nav__nav">
+      <div class="nav__nav-1">
+        <img class="nav__nav-img" src="./src/assets/logo.svg" alt="logo">
+        <div class="nav__nav-item nav__item-1">Collections</div>
+        <div class="nav__nav-item nav__item-2">men</div>
+        <div class="nav__nav-item nav__item-3">women</div>
+        <div class="nav__nav-item nav__item-4">about</div>
+        <div class="nav__nav-item nav__item-5">contact</div>
+      </div>
+      <div class="nav__nav-2">
+        <img id="cartIcon" class="nav__nav-cart close" src="./src/assets/icons/icon-cart.svg" alt="cart.svg">
+        <div class="nav__nav-iconContainer">
+          <div id="totalItemsCart" class="nav__nav-number ">
+
+          </div>
+        </div>
+        <img class="nav__nav-icon" src="./src/assets/image-avatar.png" alt="avatar.png">
+
+        <div id="navContainerCard" class="nav__card hidden">
+          <div class="nav__card-title">
+            cart
+          </div>
+          <div id="nav__cardContainer" class="nav__card-size">
+
+            <div id="cardContain" class="nav__card-container hidden">
+              <div class="nav__card-content">
+                <div>
+                  <img class="nav__card-img" src="./src/assets/product/image-product-1-thumbnail.jpg" alt="product-1">
+                </div>
+                <div class="nav__card-details">
+                  <div class="nav__card-item">
+                    fall limited edition sneakers
+                  </div>
+                  <div class="nav__card-detail">
+                    $125.00 x <span id="multiplyElements">3</span> <span id="total"
+                      class="nav__card-totalPrice">$375.00</span>
+                  </div>
+                </div>
+                <div id="deleteItem" class="nav__card-trash">
+                  <img src="./src/assets/icons/icon-delete.svg" alt="trash">
+                </div>
+              </div>
+              <button class="nav__card-button">Checkout</button>
+            </div>
+            <div id="cartEmpty" class="nav__card-intoBox hidden">
+              <div class="nav__card-text">
+                Your cart is empty
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <section id="navResponsiveContainer" class="navResponsive hidden">
+    <div class="navResponsive__container">
+      <img id="navResponsiveClose" class="navResponsive__close" src="./src/assets/icons/icon-close.svg" alt="close.svg">
+
+      <div class="navResponsive__item">
+        collections
+      </div>
+      <div class="navResponsive__item">
+        men
+      </div>
+      <div class="navResponsive__item">
+        women
+      </div>
+      <div class="navResponsive__item">
+        about
+      </div>
+      <div class="navResponsive__item">
+        contact
+      </div>
+    </div>
+
+  </section>
+  <main class="product">
+    <div class="product__container">
+      <div class="product__cardImg">
+        <div id="previousButtonRes" class="product__previous product__previouse-esponsive">
+          <img src="./src/assets/icons/icon-previous.svg" alt="preicon-previous.svg">
+        </div>
+        <div id="nextButtonRes" class="product__next product__next-responsive">
+          <img src="./src/assets/icons/icon-next.svg" alt="next.svg">
+        </div>
+        <div id="showImage" class="product__showImage">
+          <img id="selectedImage" class="product__showImage-img" src="./src/assets/product/image-product-1.jpg"
+            alt="sneaker">
+        </div>
+
+        <div class="product__imgContainer">
+
+          <div class="product__thumbnailContainer-1 product__thumbnailContainer-hover product__thumbnailContainer">
+            <img
+              class="product__thumbnailImg product__thumbnailImg-1 product__thumbnailContainer product__thumbnailImg-selected"
+              src="./src/assets/product/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div class="product__thumbnailContainer-2 product__thumbnailContainer-hover">
+            <img class="product__thumbnailImg product__thumbnailImg-2"
+              src="./src/assets/product/image-product-2-thumbnail.jpg" alt="">
+          </div>
+          <div class="product__thumbnailContainer-3 product__thumbnailContainer-hover">
+            <img class="product__thumbnailImg product__thumbnailImg-3"
+              src="./src/assets/product/image-product-3-thumbnail.jpg" alt="">
+          </div>
+          <div class="product__thumbnailContainer-4 product__thumbnailContainer-hover">
+            <img class="product__thumbnailImg product__thumbnailImg-4"
+              src="./src/assets/product/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="product__description">
+        <div class="product__description-header header">
+          sneaker company
+        </div>
+        <div class="product__description-title title">
+          fall limited edition sneakers
+        </div>
+        <p class="product__description-description">
+          <span class="product__description-firstLetter">these</span> low-profile sneakers are your perfect casual wear
+          companion. <span class="product__description-firstLetter">featuring</span> a
+          durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+
+        <div class="product__description-value">
+          <div>
+            <span class="product__description-price">$125.00</span>
+            <span class="product__description-percent">50%
+              </sp>
+          </div>
+          <div class="product__description-discount">
+            $250.00
+          </div>
+        </div>
+
+
+
+        <div class="product__pay">
+          <div class="product__pay-add">
+            <span id="lessItem" class="product__pay-item">-</span>
+            <span id="numberOfItems" class="product__pay-item ">0</span>
+            <span id="addItem" class="product__pay-item">+</span>
+          </div>
+          <button id="addCartButton" class="product__pay-button">
+            <div>
+              <img class="product__pay-icon" src="./src/assets/icons/icon-cart copy.svg" alt="cart">
+            </div>
+            <div>
+              Add to cart
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section>
+
+    <section id="previewImage" class="previewImage hidden">
+      <div class="previewImage__cardImg">
+        <div id="showImage" class="previewImage__showImage">
+          <div id="closeImage" class="previewImage__close ">
+            <img src="./src/assets/icons/icon-close.svg" alt="close.svg">
+          </div>
+          <div id="nextButton" class="previewImage__next">
+            <img src="./src/assets/icons/icon-next.svg" alt="next.svg">
+          </div>
+          <div id="previousButton" class="previewImage__preview">
+            <img src="./src/assets/icons/icon-previous.svg" alt="preicon-previous.svg">
+
+          </div>
+
+          <img id="selectedImagePreview" class="previewImage__showImage-img"
+            src="./src/assets/product/image-product-1.jpg" alt="sneaker">
+        </div>
+        <div class="previewImage__imgContainer">
+          <div class="previewImage__thumbnailContainer-1 previewImage__thumbnailContainer-hover 
+             previewImage__thumbnailContainer  
+            ">
+            <img class="previewImage__thumbnailImg previewImage__thumbnailImg-1 previewImage__thumbnailContainer  
+            
+              " src="./src/assets/product/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div class="previewImage__thumbnailContainer-2 previewImage__thumbnailContainer-hover
+          previewImage__thumbnailContainer
+          ">
+            <img class="previewImage__thumbnailImg previewImage__thumbnailImg-2"
+              src="./src/assets/product/image-product-2-thumbnail.jpg" alt="">
+          </div>
+          <div class="previewImage__thumbnailContainer-3 previewImage__thumbnailContainer-hover
+          previewImage__thumbnailContainer
+          ">
+            <img class="previewImage__thumbnailImg previewImage__thumbnailImg-3"
+              src="./src/assets/product/image-product-3-thumbnail.jpg" alt="">
+          </div>
+          <div class="previewImage__thumbnailContainer-4 previewImage__thumbnailContainer-hover
+          previewImage__thumbnailContainer
+          ">
+            <img class="previewImage__thumbnailImg previewImage__thumbnailImg-4"
+              src="./src/assets/product/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
